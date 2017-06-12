@@ -45,4 +45,16 @@ public class UserController extends BaseCron{
 //		}
 //		return jsonStr;
 	}
+	@RequestMapping("/findPage")
+	public Object findPage(User user, int startPage, int pageSize){
+//		String jsonStr = JSON.toJSONString(this.userService.findAll());
+		try {
+			JSONObject r = new JSONObject();
+			r.put("r", this.userService.findUserPage(user, startPage, pageSize));
+			return r.toJSONString();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }

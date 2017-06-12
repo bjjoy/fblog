@@ -13,4 +13,6 @@ public interface UserService extends BaseService<User, String>{
 	public List<Map<String,Object>> findUserByName(String name) throws Exception;
 	
 	public List<User> findUserBySex(String sex) throws Exception;
+	
+	public List<Map<String,Object>> findUserPage(User user, int startPage, int pageSize);
 }

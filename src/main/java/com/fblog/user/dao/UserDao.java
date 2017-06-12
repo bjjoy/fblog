@@ -16,4 +16,6 @@ public interface UserDao extends BaseDao<User, String>{
 	public List<Map<String,Object>> findUserByName(String name);
 	
 	public List<User> findUserBySex(String sex);
+	
+	public List<Map<String,Object>> findUserPage(User user, int startPage, int pageSize);
 }

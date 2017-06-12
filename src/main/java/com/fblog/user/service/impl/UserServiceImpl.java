@@ -31,4 +31,9 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements Us
 	public List<User> findUserBySex(String sex) throws Exception{
 		return this.userDao.findUserBySex(sex);
 	}
+
+	public List<Map<String, Object>> findUserPage(User user, int startPage,
+			int pageSize) {
+		return this.userDao.findUserPage(user, startPage, pageSize);
+	}
 }

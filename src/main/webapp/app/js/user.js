@@ -1,10 +1,15 @@
 $(document).ready(function(){
+	var param = {}
 	$.ajax({
 		type:"post",
 		dataType:"json",
-		url:"/fblog/auth/find",
+		url:"/fblog/auth/findPage",
 		async:true,
-		data:"userName=a",
+		data:{
+			"sex":"1",
+			"startPage":2,
+			"pageSize":2
+		},
 		success:function(data){
 			userInfo(data.r);
 		}
