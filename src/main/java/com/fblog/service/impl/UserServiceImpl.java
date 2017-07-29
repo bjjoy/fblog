@@ -1,4 +1,4 @@
-package com.fblog.user.service.impl;
+package com.fblog.service.impl;
 
 import java.util.List;
 import java.util.Map;
@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.fblog.base.impl.BaseServiceImpl;
-import com.fblog.user.dao.UserDao;
-import com.fblog.user.entity.User;
-import com.fblog.user.service.UserService;
+import com.fblog.dao.UserDao;
+import com.fblog.entity.User;
+import com.fblog.service.UserService;
 
 @Service("userService")
 @Transactional

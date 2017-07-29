@@ -1,10 +1,10 @@
-package com.fblog.user.service;
+package com.fblog.service;
 
 import java.util.List;
 import java.util.Map;
 
 import com.fblog.base.BaseService;
-import com.fblog.user.entity.User;
+import com.fblog.entity.User;
 
 public interface UserService extends BaseService<User, String>{
 	

@@ -1,10 +1,10 @@
-package com.fblog.user.dao;
+package com.fblog.dao;
 
 import java.util.List;
 import java.util.Map;
 
 import com.fblog.base.BaseDao;
-import com.fblog.user.entity.User;
+import com.fblog.entity.User;
 
 public interface UserDao extends BaseDao<User, String>{
 

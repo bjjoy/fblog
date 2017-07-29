@@ -1,4 +1,4 @@
-package com.fblog.user.dao.impl;
+package com.fblog.dao.impl;
 
 import java.util.List;
 import java.util.Map;
@@ -11,8 +11,8 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.fblog.base.impl.BaseDaoImpl;
-import com.fblog.user.dao.UserDao;
-import com.fblog.user.entity.User;
+import com.fblog.dao.UserDao;
+import com.fblog.entity.User;
 
 @Repository("userDao")
 public class UserDaoImpl extends BaseDaoImpl<User, String> implements UserDao{

@@ -1,4 +1,4 @@
-package com.fblog.user.controller;
+package com.fblog.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.fblog.base.impl.BaseCron;
-import com.fblog.user.entity.User;
-import com.fblog.user.service.UserService;
+import com.fblog.entity.User;
+import com.fblog.service.UserService;
 
 @Controller
 @ResponseBody
